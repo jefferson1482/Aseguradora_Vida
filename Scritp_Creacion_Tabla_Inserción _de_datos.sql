@@ -1,4 +1,4 @@
-﻿/*==============================================================*/
+/*==============================================================*/
 /* Table: ASEGURADO                                             */
 /*==============================================================*/
 create table ASEGURADO (
@@ -118,17 +118,18 @@ create table POLIZA (
    ASEGURADO_ID         INT                  not null,
    POLI_INDEMNIZACION   VARCHAR(30)          not null,
    POLI_FORMA_PAGO      VARCHAR(30)          not null,
+   POLI_PAGO_POLIZA     DECIMAL	             not null,
    POLI_BENEFICIARIO    VARCHAR(250)         not null,
    constraint PK_POLIZA primary key (POLI_ID)
 );
 
 /*==============================================================*/
-insert into POLIZA values(1,1,1,'1.000000','quincena','Nadie');
-insert into POLIZA values(2,2,2,'1.000000','mes','Familiar');
-insert into POLIZA values(3,3,3,'1.000000','quincena','Hijo');
-insert into POLIZA values(4,4,4,'1.000000','quincena','Familiar');
-insert into POLIZA values(5,5,5,'500.00','mes','Hijo');
-insert into POLIZA values(6,6,6,'500.00','mes','Familiar');
+insert into POLIZA values(1,1,1,'1.000000','quincena',15.00,'Nadie');
+insert into POLIZA values(2,2,2,'1.000000','mes',50.00,'Familiar');
+insert into POLIZA values(3,3,3,'1.000000','quincena',15.00,'Hijo');
+insert into POLIZA values(4,4,4,'1.000000','quincena',15.00,'Familiar');
+insert into POLIZA values(5,5,5,'500.00','mes',50.00,'Hijo');
+insert into POLIZA values(6,6,6,'500.00','mes',50.00,'Familiar');
 
 /*==============================================================*/
 /* Table: REGISTRO                                              */
@@ -157,8 +158,8 @@ create table FACTURA (
    REGIS_ID             INT                  not null,
    FAC_FECHA            DATE                 not null,
    FAC_PAGO             VARCHAR(30)          not null,
-   FAC_TOTAL            VARCHAR(30)          not null,
    FAC_SUBTOTAL         VARCHAR(30)          not null,
+   FAC_TOTAL            VARCHAR(30)          not null,
    constraint PK_FACTURA primary key (FAC_NUM)
 );
 
