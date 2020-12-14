@@ -1,4 +1,4 @@
-﻿SELECT 
+SELECT 
   factura.fac_num, 
   factura.fac_fecha, 
   empresa.emp_nombre, 
@@ -14,7 +14,8 @@
   cubre_poliza.cu_po_individual, 
   cubre_poliza.cu_po_colectivos, 
   poliza.poli_indemnizacion, 
-  poliza.poli_forma_pago, 
+  poliza.poli_forma_pago,
+  poliza.poli_pago_poliza, 
   poliza.poli_beneficiario, 
   empresa.emp_telefono, 
   empresa.emp_correo, 
