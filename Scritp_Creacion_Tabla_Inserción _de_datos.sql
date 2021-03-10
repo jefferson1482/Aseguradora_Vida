@@ -164,10 +164,10 @@ create table FACTURA (
 );
 
 /*==============================================================*/
-insert into FACTURA values('00001',1,1,'2021-04-01','Targeta','1,500.000','1,500.500');
-insert into FACTURA values('00002',1,2,'2020-03-20','Targeta','1,500.000','1,500.500');
-insert into FACTURA values('00003',1,3,'2015-06-30','Efectivo','1,500.000','1,500.500');
-insert into FACTURA values('00004',1,4,'2018-11-01','Efectivo','1,500.000','1,500.500');
+insert into FACTURA values('00001',1,1,'2021-04-01','Targeta','1.500000','1.500500');
+insert into FACTURA values('00002',1,2,'2020-03-20','Targeta','1.500000','1.500500');
+insert into FACTURA values('00003',1,3,'2015-06-30','Efectivo','1.500000','1.500500');
+insert into FACTURA values('00004',1,4,'2018-11-01','Efectivo','1.500000','1.500500');
 insert into FACTURA values('00005',1,5,'2015-06-30','Targeta','850.00','850.00');
 insert into FACTURA values('00006',1,6,'2018-11-01','Targeta','850.00','850.00');
 
